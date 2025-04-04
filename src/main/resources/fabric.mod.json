@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "gigacraftmod",
+	"version": "${version}",
+	"name": "GigaCraft Mod",
+	"description": "GigaCraft is a Project of the Creator WZDelchi (Twitch) with the Goal to Create a good Mix between Magic, Tech and PvP",
+	"authors": [
+		"Elchi"
+	],
+	"contact": {
+		"homepage": "https://1206elchi.github.io/Elchi",
+		"sources": "https://github.com/Minecraft-Mods/GigaCraft"
+	},
+	"license": "MIT",
+	"icon": "assets/gigacraftmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.elchi.gigacraftmod.GigaCraftMod"
+		],
+		"fabric-datagen": [
+			"net.elchi.gigacraftmod.GigaCraftModDataGenerator"
+		],
+		"client": [
+			"net.elchi.gigacraftmod.GigacraftModClient"
+		]
+
+	},
+	"mixins": [
+		"gigacraftmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
